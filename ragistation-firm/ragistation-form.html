@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college ragistration form</title>
+    <!-- <link rel="stylesheet" href="style05.css"> --> -->
+    <style>
+    section{
+        width: 70%;
+        display:inline-block;
+        padding:  auto;
+        margin-left: 10rem;
+        background-color: darkgray;
+
+        
+    }
+    .div{
+        padding: 3rem;
+        background-color: aqua;
+        border: .5rem solid darkgray;
+    }
+
+        h1{
+            
+            color: rgb(87, 43, 145);
+        }
+        .dd label{
+            display:block ;
+            float: left;
+            margin-right: 20rem;
+        }
+       .dd input{
+            display: block;
+        
+            border-radius: 1rem;
+            color: coral;
+            border-color: greenyellow;
+        }
+        table,th,td,tr{
+            border: 2px red solid;
+            border-collapse: collapse;
+        }
+        body{
+            background-color:aliceblue;
+        }
+        .dd{
+            display: block;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="div">
+           
+    <h1 style="display: block; text-align: center;"> <mark>COLLEGE RAGISTRATION FORM</mark> </h1>
+
+
+    <form>
+        <!-- name -->
+
+        <div class="dd">
+        <label for="name">First name</label>
+        <input type="text" name="name" value="bk" readonly><br>
+        <label for="name">last name</label>
+        <input type="text" name="name" value="sarswal" readonly><br>
+
+
+        <!-- date of birth -->
+
+
+        <label for="DOB">date of birth</label>
+        <input type="date" name="DOB"><br>
+
+
+        <!-- gender -->
+
+
+        <p>please slect your gender</p>
+        <label for="gender">man</label>
+        <input type="radio" value="gender" name="gender"><br>
+        <label for="gender">woman</label>
+        <input type="radio" value="Man" name="gender"><br>
+
+
+        <!-- phone number -->
+
+
+        <label for="phone">phone number</label>
+        <input type="number" name="phone"><br>
+
+
+        <!-- email id -->
+
+
+        <label for="mail">Enter your email</label>
+        <input type="email" name="mail"><br>
+
+
+        <!-- address -->
+
+
+        <label for="address">adress</label>
+        <textarea name="Address" rows="2" cols="10" style="margin-left: 120px;"></textarea><br>
+
+
+        <!-- country -->
+
+
+        <label for="country">country</label>
+        <!-- disable for no take othe input -->
+        <input type="text" name="country" value="india" disabled><br>
+
+
+        <!-- state -->
+
+
+        <label for="state">state</label>
+        <input type="text" name="state" value="rajasthan" readonly><br>
+
+
+        <!-- city -->
+
+
+        <label for="city">city</label>
+        <input type="text" name="city" value="dausa" readonly><br>
+
+
+        <!-- pincode -->
+
+
+        <label for="pincode">pincode</label>
+        <input type="number" name="pincode"><br>
+
+        <!-- hobbies -->
+
+
+
+        <p>please slect your hobbies</p>
+        <label for="gender">pubg</label>
+        <input type="checkbox" value="pubg" name="gender"><br>
+        <label for="gender">typing</label>
+        <input type="checkbox" value="typing" name="gender"><br>
+        <label for="gender">running</label>
+        <input type="checkbox" value="running" name="gender"><br>
+        <label for="gender">jym</label>
+        <input type="checkbox" value="jym" name="gender"><br>
+        <label for="gender">other</label>
+        <input type="checkbox" value="other" name="gender">
+        <input type="text" placeholder="enter  your other hobbies">
+        <br>
+        </div>
+        <!-- course -->
+
+
+        <p>please slect your course</p>
+
+
+
+        <input type="radio" name="course">
+        <label for="course">BTECH</label>
+
+        <!-- select for select branch etc -->
+        <!-- drop down tage -->
+
+
+        <select name="BTECH">
+            <option value="branch">select your branch</option>
+            <option value="CS">computer science</option>
+            <option value="CE"> civil Engineering</option>
+            <option value="ME">mechanical engineeering"</option>
+            <option value="EE">Electrical Engineering</option>
+
+
+            <input type="radio" name="course">
+            <label for="course">BCA</label>
+            <select name="BCA">
+                <option value="branch">select your branch</option>
+                <option value="CS">computer science</option>
+                <option value="CE"> civil Engineering</option>
+                <option value="ME">mechanical engineeering"</option>
+                <option value="EE">Electrical Engineering</option>
+                <input type="radio" name="course">
+                <label for="course">BSC</label>
+                <input type="radio" name="course">
+                <label for="course">BA</label>
+
+
+
+                <!-- QUALIFICATION -->
+
+
+                <P>QUALIFICATION</P>
+                <table>
+                    <tr>
+                        <th>examination</th>
+                        <th>board</th>
+                        <th>parcentage</th>
+                        <th>year of passing</th>
+                    </tr>
+                    <tr>
+
+                
+                        <!-- doubt -->
+                        <!--10 ko roman  me kaise type kre  -->
+
+
+                        <td>class10</td>
+                        <td>
+                            <select name="BCA">
+                            <option value="branch">select your board</option>
+                            <option value="CS">rbse</option>
+                            <option value="CE"> cbse</option></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>class12</td>
+                        <td>
+                            <select name="BCA">
+                            <option value="branch">select your board</option>
+                            <option value="CS">rbse</option>
+                            <option value="CE"> rbse</option></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+
+                </table><br>
+
+        
+                <!-- resume -->
+
+
+
+                <label for="myfile">please upload your password size photo</label>
+                <input type="file" name="myfile"> <br>
+
+
+                <!-- url -->
+
+
+                <label for="website"> please enter your website url</label>
+                <input type="url" name="website"><br>
+
+
+
+                <!-- reset bottan -->
+
+
+
+                <input type="reset" value="reset">
+
+
+                <!--   alert buttan -->
+                <!-- more stady in js -->
+
+
+
+                <input type="button" value="cilck here  for alert">
+
+
+
+                <!-- submit form -->
+
+
+                <p>submit click here</p>
+
+
+                <input type="image" name="myemage"
+                    src="https://media.emailonacid.com/wp-content/uploads/2019/03/2019-GifsInEmail.gif"
+                    height="50px"><br>
+    </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
